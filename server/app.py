@@ -12,7 +12,7 @@ def index():
     return "Welcome to the Superheroes API! Use /heroes or /powers to access the data."
 
 
-# Models (Add these in a separate file or here, based on your setup)
+
 class Hero(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
