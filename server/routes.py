@@ -1,6 +1,6 @@
-from flask import jsonify, request
+from flask import jsonify
 from app import app, db
-from models import Hero, Power, HeroPower
+from models import Hero, Power
 
 @app.route('/heroes', methods=['GET'])
 def get_heroes():
